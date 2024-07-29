@@ -1,0 +1,13 @@
+﻿@page
+@model Assessment3.Pages.RegisterStudentModel
+@{
+}
+<h1>Register Student</h1>
+
+<form method="post">
+    <label>Name:</label><input asp-for="Name" />
+    <label>Qualification:</label><input asp-for="Qualification" />
+    <label>Skill:</label><input asp-for="Skill" />
+    <input type="submit" value="Register" />
+</form>
+<p>@Model.Message</p>

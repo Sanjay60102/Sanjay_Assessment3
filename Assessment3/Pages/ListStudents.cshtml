@@ -1,0 +1,27 @@
+﻿@page
+@model Assessment3.Pages.ListStudentsModel
+@{
+}
+<h1>List Students</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Qualification</th>
+            <th>Skill</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Student)
+        {
+            <tr>
+                <td>@student.StudentId</td>
+                <td>@student.Name</td>
+                <td>@student.Qualification</td>
+                <td>@student.Skill</td>
+            </tr>
+        }
+    </tbody>
+</table>
